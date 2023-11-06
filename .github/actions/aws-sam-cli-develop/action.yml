@@ -5,8 +5,8 @@ runs:
     - uses: actions/checkout@v3
       name: Checkout latest AWS SAM CLI commit
       with:
-        repository: 'aws/aws-sam-cli'
-        ref: 'develop'
+        repository: 'moelasmar/aws-sam-cli'
+        ref: 'develop_hidden_imports'
         path: 'aws-sam-cli-develop'
     - uses: actions/setup-python@v4
       name: Install Python ${{ env.PYTHON_VERSION_INSTALL }}
